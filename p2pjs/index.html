@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ServerlessSnap</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a>Enter peer's ID:</a></li>
+							<input type="text" id ='theirId'>  </input>
+							<li><button id='connectButton' type="button" onclick='connectToPeer()'>Connect</button></li>
+							<li></li>
+							<li></li>
+							<li><a>Or share your ID:</a></li>
+							<input type="text" id ='selfId' readOnly>  </input>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Serverless Snap</h1>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- ChatBox -->
+            <section id="one" class="wrapper style2 spotlights">
+                    <section>
+                            <a href="#" class="image"></a>
+                            <div class="content">
+                                    <div class="inner content">
+                                            <h2>Messages</h2>
+                                            	
+                                            		<ul id="messageBox">	
+                                            			<li id="theirMessage" class="message"> Person 1 </li>
+                                            			<li id="selfMessage" class="message"> Person 2 </li>
+                                            			<li id="theirMessage" class="message"> Person 1 </li>
+                                            		</ul>
+                                            		<ul class="actions">	
+                                            		<input type="text" id ='theirId' value="Type your message">  </input>
+                                            		<br>
+                                                    <li><a href="#" class="button" onclick='sendMessage()'>Send</a></li>
+                                            		</ul>
+                                    </div>
+                            </div>
+                    </section>
+            </section>
+
+
+			<script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+			<script src="main.js"></script>
+
+	</body>
+</html>
